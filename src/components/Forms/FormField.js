@@ -1,9 +1,9 @@
 function FormField({ type, id, fname, onChange, caption, value, error, ...attr}){
     return (
-      <section className="border rounded">
+      <section className="border border-indigo-600 rounded w-auto">
       <label className="sr-only">{caption}</label>
       <input
-          className="w-full appearance-none rounded-none p-3 border-gray-300"
+          className="w-full appearance-none rounded-none p-3"
           type={type}
           id={id}
           name={fname}

@@ -1,20 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
 import BrandHeader from './components/BrandHeader/BrandHeader'
-import Cards from './components/Cards/Cards';
-import CardHolder from './components/Cards/CardHolder';
-import NavBarItems from './components/NavBars/NavBarItems';
 import Login from './components/Login/Login';
+import Home from './components/Pages/Home';
+import Todo from './components/Pages/Todo/Todo';
 import FormField from './components/Forms/FormField';
 
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 function App() {
   return (
+    <Router>
     <section>
       <BrandHeader></BrandHeader>
-      <section>
-        <Login></Login>
-      </section>   
+      <Switch>
+        <Route path="/" exact>
+            <Home />
+        </Route>
+        <Route path="/todos" exact>
+          <Todo />
+        </Route>
+        <Route path="/login" exact>
+            <Login></Login>
+        </Route>
+      </Switch>
     </section>
+  </Router>
   );
 }
 

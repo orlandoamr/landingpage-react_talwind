@@ -1,3 +1,9 @@
+header{
+  background-color: azure;
+}
+header nav{
+ /* background-color: azure;*/
+}
 header nav ul {
     display: flex;
     list-style: none;

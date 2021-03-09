@@ -5,8 +5,8 @@ import "./BrandHeader.css";
 
 function BrandHeader({ children }){
     return(
-        <header>
-            <Brand title="World Of Watches"></Brand>
+        <header className="bg-indigo-600 border-b-2">
+            <Brand title="MyReactApp"></Brand>
             <NavBar>
             
             </NavBar>

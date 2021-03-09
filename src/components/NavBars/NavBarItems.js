@@ -1,6 +1,9 @@
+import {NavLink} from 'react-router-dom';
 function NavBarItems ({label, uri}){
     return(
-        <li><a alt={label} href={uri}>{label}</a></li>
+        <li>
+            <NavLink to={uri}>{label}</NavLink>
+        </li>
     );
 }
 
